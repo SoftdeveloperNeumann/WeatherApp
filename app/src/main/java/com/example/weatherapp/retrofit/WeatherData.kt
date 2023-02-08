@@ -10,6 +10,6 @@ class WeatherData(
     @SerializedName("weather") val info:Array<Info>
 )
 
-class Temp(temp:Double)
+class Temp(val temp:Double)
 
-class Info(val description:String, icon:String)
+class Info(val description:String, val icon:String)
